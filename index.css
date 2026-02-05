@@ -140,9 +140,40 @@ body {
 }
 
 /* Main */
-.Main{}
-.Main-personalInfo{}
-.PersonalInfo-article{}
+.Main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: pink;
+
+    padding: 1.25rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+.Main-personalInfo{
+    width: 100%;
+    background-color: lightblue;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+.PersonalInfo-article{
+    width: 100%;
+    background-color: green;
+
+    padding: 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: .625rem;
+}
 .PersonalInfo-h2{}
 .PersonalInfo-p{}
 .PersonalInfo-carrousel{}
