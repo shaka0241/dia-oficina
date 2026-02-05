@@ -93,12 +93,64 @@ body {
 }
 
 /* Header */
-.Header{}
-.Header-logo{}
-.Header-image{}
-.Header-h1{}
-.Header-ul{}
-.Header-li{}
+.Header{
+    width: 100%;
+    min-height: 150px;
+    background-color: orange;
+
+    padding: 1.25rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header-logo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    background-color: red;
+}
+.Header-image{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    border-radius: 50%;
+}
+.Header-h1{
+    font-size: 2em;
+
+    font-weight: bold;
+}
+.Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.25rem;
+
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.Header-li:hover{
+    scale: 1.2;
+}
 
 /* Main */
 .Main{}
+.Main-personalInfo{}
+.PersonalInfo-article{}
+.PersonalInfo-h2{}
+.PersonalInfo-p{}
+.PersonalInfo-carrousel{}
+.Carrousel-carrete{}
+.Carrousel-apartado´
+.Carrousel-span{}
+.Main-profesional{}
+.Profesional-h2{}
+.Profesional-p{}
+.Profesional-ul{}
+.Profesional-li{}

@@ -12,26 +12,28 @@
 <body>
     <header class="Header">
         <div class="Header-logo">
-            <div class="Header-image"></div>
+            <div class="Header-image">
+                <img src="./assets/sonia.jpg" alt="imagen de sonia">
+            </div>
             <h1 class="Header-h1">Sonia Gómez García</h1>
         </div>
         <ul class="Header-ul">
-            <li class="Header-li">Sobre mí</li>
-            <li class="Header-li">Mis pasiones</li>
-            <li class="Header-li">Habilidades</li>
+            <li class="Header-li"><a href="#sobre-mi">Sobre mí</a></li>
+            <li class="Header-li"><a href="#mis-pasiones">Mis pasiones</a></li>
+            <li class="Header-li"><a href="#mis-habilidades">Habilidades</a></li>
         </ul>
     </header>
     <main class="Main">
         <!-- Informacion personal -->
         <div class="Main-personalInfo PersonalInfo">
             <!-- Sobre mi -->
-            <article class="PersonalInfo-article">
+            <article class="PersonalInfo-article" id="sobre-mi">
                 <h2 class="PersonalInfo-h2">Sobre mí</h2>
                 <p class="PersonalInfo-p">Soy Sonia Gómez, una estudiante del Máster en programación Web en CEI.</p>
                 <p class="PersonalInfo-p">Mis motivaciones para estudiar dicho máster es llegar a ser capaz de realizar todas las aplicaciones web que se me ocurran.</p>
             </article>
             <!-- Mis pasiones -->
-            <article class="PersonalInfo-article">
+            <article class="PersonalInfo-article" id="mis-pasiones">
                 <h2 class="PersonalInfo-h2">Mis pasiones</h2>
                 <p class="PersonalInfo-p">Estas son algunas de mis pasiones, las cuales me gusta practicar casi a diario:</p>
                 <div class="PersonalInfo-carrousel Carrousel">
@@ -50,7 +52,7 @@
             </article>
         </div>
         <!-- Informacion profesional -->
-        <article class="Main-profesional Profesional">
+        <article class="Main-profesional Profesional" id="mis-habilidades">
             <h2 class="Profesional-h2">Mis habilidades</h2>
             <p class="Profesional-p">Durante el Máster en programación web he conseguido habilidades como:</p>
             <ul class="Profesional-ul">
