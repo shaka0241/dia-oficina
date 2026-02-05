@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonia Gómez</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
 </head>
+
 <body>
-    
+    <header class="Header">
+        <div class="Header-logo">
+            <div class="Header-image"></div>
+            <h1 class="Header-h1">Sonia Gómez García</h1>
+        </div>
+        <ul class="Header-ul">
+            <li class="Header-li">Sobre mí</li>
+            <li class="Header-li">Mis pasiones</li>
+            <li class="Header-li">Habilidades</li>
+        </ul>
+    </header>
+    <main class="Main">
+        <!-- Informacion personal -->
+        <div class="Main-personalInfo PersonalInfo">
+            <!-- Sobre mi -->
+            <article class="PersonalInfo-article">
+                <h2 class="PersonalInfo-h2">Sobre mí</h2>
+                <p class="PersonalInfo-p">Soy Sonia Gómez, una estudiante del Máster en programación Web en CEI.</p>
+                <p class="PersonalInfo-p">Mis motivaciones para estudiar dicho máster es llegar a ser capaz de realizar todas las aplicaciones web que se me ocurran.</p>
+            </article>
+            <!-- Mis pasiones -->
+            <article class="PersonalInfo-article">
+                <h2 class="PersonalInfo-h2">Mis pasiones</h2>
+                <p class="PersonalInfo-p">Estas son algunas de mis pasiones, las cuales me gusta practicar casi a diario:</p>
+                <div class="PersonalInfo-carrousel Carrousel">
+                    <ul class="Carrousel-carrete">
+                        <li class="Carrousel-apartado">
+                            <span class="Carrousel-span">Tocar el violonchelo</span>
+                        </li>
+                        <li class="Carrousel-apartado">
+                            <span class="Carrousel-span">Crear páginas web</span>
+                        </li>
+                        <li class="Carrousel-apartado">
+                            <span class="Carrousel-span">Jugar a videojuegos</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <!-- Informacion profesional -->
+        <article class="Main-profesional Profesional">
+            <h2 class="Profesional-h2">Mis habilidades</h2>
+            <p class="Profesional-p">Durante el Máster en programación web he conseguido habilidades como:</p>
+            <ul class="Profesional-ul">
+                <li class="Profesional-li">HTML</li>
+                <li class="Profesional-li">CSS</li>
+                <li class="Profesional-li">JavaScript</li>
+                <li class="Profesional-li">GitHub</li>
+            </ul>
+        </article>
+    </main>
 </body>
+
 </html>

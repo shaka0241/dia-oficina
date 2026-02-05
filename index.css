@@ -1,3 +1,8 @@
+/* Colores */
+:root{
+    --color-principal: rgb(198, 179, 179);
+}
+
 :root {
   font-size : 100%;
   font-family : system-ui, sans-serif;
@@ -87,3 +92,13 @@ body {
   -moz-osx-font-smoothing : grayscale;
 }
 
+/* Header */
+.Header{}
+.Header-logo{}
+.Header-image{}
+.Header-h1{}
+.Header-ul{}
+.Header-li{}
+
+/* Main */
+.Main{}
