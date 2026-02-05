@@ -216,7 +216,7 @@ body{
 .Main {
     width: 100%;
     min-height: 100vh;
-    background-color: pink;
+    /* background-color: pink; */
 
     padding: 1.25rem;
 
@@ -255,7 +255,11 @@ body{
     font-size: 2em;
     font-weight: bold;
 }
+.PersonalInfo-article--separated{
+    gap: 50px;
 
+    font-size: 1.5em;
+}
 .PersonalInfo-p {}
 
 .PersonalInfo-carrousel {
@@ -276,8 +280,8 @@ body{
 
 .Carrousel-apartado {
     width: 100%;
-    min-height: 200px;
-    background-color: lightcoral;
+    min-height: 300px;
+    /* background-color: lightcoral; */
 
     padding: .625rem;
 
@@ -285,12 +289,28 @@ body{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: end;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.Carrousel-apartado:nth-child(1){
+    background-image: url("./assets/chelo.png");
+}
+.Carrousel-apartado:nth-child(2){
+    background-image: url("./assets/apps.png");
+}
+.Carrousel-apartado:nth-child(3){
+    background-image: url("./assets/videojuegos.png");
 }
 
 .Carrousel-span {
     font-weight: bold;
+    font-size: 1.5em;
 
     color: white;
+}
+.Carrousel-span--gray{
+    color: rgb(64, 64, 64);
 }
 
 .Carrousel-prev {
@@ -340,7 +360,7 @@ body{
 
 .Profesional-ul {
     width: 100%;
-    background-color: lightgray;
+    /* background-color: lightgray; */
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
