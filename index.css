@@ -383,3 +383,25 @@ body{
     box-shadow: 5px 5px 10px #bebebe,
         -5px -5px 10px #ffffff;
 }
+
+/* Footer */
+.Footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--color-cuadrados);
+
+    padding: 1.25rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.Footer-h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+.u-bold{
+    font-weight: bold;
+}
