@@ -1,0 +1,21 @@
+{
+  "name": "dia-oficina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaka0241/dia-oficina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shaka0241/dia-oficina/issues"
+  },
+  "homepage": "https://github.com/shaka0241/dia-oficina#readme"
+}
