@@ -174,12 +174,52 @@ body {
     align-items: center;
     gap: .625rem;
 }
-.PersonalInfo-h2{}
+.PersonalInfo-h2{
+    font-size: 2em;
+    font-weight: bold;
+}
 .PersonalInfo-p{}
-.PersonalInfo-carrousel{}
-.Carrousel-carrete{}
-.Carrousel-apartado´
-.Carrousel-span{}
+.PersonalInfo-carrousel{
+    width: 100%;
+    background-color: red;
+
+    overflow: hidden;
+
+    position: relative;
+}
+.Carrousel-carrete{
+    width: 300%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Carrousel-apartado{
+    width: 100%;
+    min-height: 200px;
+    background-color: lightcoral;
+
+    padding: .625rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: end;
+}
+.Carrousel-span{
+    font-weight: bold;
+
+    color: white;
+}
+.Carrousel-prev{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.Carrousel-next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
 .Main-profesional{}
 .Profesional-h2{}
 .Profesional-p{}
