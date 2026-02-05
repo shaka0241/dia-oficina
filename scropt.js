@@ -1,3 +1,6 @@
+// Importar fetch desde node-fetch
+import fetch from 'node-fetch';
+
 // Función asíncrona usando Arrow Function
 const generarPerfilUsuario = async () => {
     try {
