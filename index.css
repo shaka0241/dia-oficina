@@ -156,6 +156,8 @@ body {
 /* Body */
 body {
     background-color: var(--color-principal);
+
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Header */
