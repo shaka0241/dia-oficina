@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 const userGenerator = async () => { 
     try {
         const response = await fetch('https://randomuser.me/api/');
