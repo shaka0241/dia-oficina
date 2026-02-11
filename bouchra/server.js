@@ -1,31 +1,21 @@
 const express = require("express");
-const cors = require("cors");
 
 const app = express();
-
-app.use(cors());
-app.use(express.json());
+const PORT = 3000;
 
 const users = [
   { id: 1, name: "Ana" },
   { id: 2, name: "Luis" }
 ];
 
-// GET
-app.get("/users", (req, res) => {
-  res.json(users);
+app.get("/", (req, res) => {
+  res.json({ message: "Bienvenido a la API de bichoooooooooo" });
 });
 
-// POST
-app.post("/users", (req, res) => {
-  const newUser = {
-    id: users.length + 1,
-    name: req.body.name
-  };
-  users.push(newUser);
-  res.status(201).json(newUser);
-});
 
-app.listen(3000, () => {
-  console.log("API corriendo en http://localhost:3000");
+app.get("/api/cursos", (req, res) => {
+  res.json({ cursos: ["JavaScript", "Python", "Java"] });
+});
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
