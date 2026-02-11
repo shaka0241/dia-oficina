@@ -11,5 +11,8 @@ coverage
 tarn.lock
 *node_modules/
 *backend/node_modules/
-*backend/server/
-*backend/serverV2/
+*backend/server/node_modules/
+*backend/serverV2/node_modules/
+*backend/package-lock.json
+*backend/server/package-lock.json
+*backend/serverV2/package-lock.json
