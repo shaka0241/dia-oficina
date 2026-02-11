@@ -16,8 +16,9 @@ app.get('/cursos', (req, res) => {
     ]);
 })
 
-app.get('/saludo', (req, res) => {
-    res.send('<h1>Hola Jorge ,bienvenido a tu academia Fullstack</h1>');
+app.get('/saludo/:nombre', (req, res) => {
+    const nombreUsuario = req.params.nombre
+    res.send(`Hola ${nombreUsuario} Bienvenido`);
 })
 
 app.listen(port, ()=> {
