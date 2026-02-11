@@ -1,0 +1,24 @@
+{
+  "name": "diatrabajo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scropt.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaka0241/dia-oficina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaka0241/dia-oficina/issues"
+  },
+  "homepage": "https://github.com/shaka0241/dia-oficina#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
