@@ -1,13 +1,16 @@
 const express = require('express')
 const app = express()
+const port = 5000
 
  const puerto = async () => {
   try {
-    
-    const port = 5000;
+
+    app.get('/index', (req, res) => {
+        res.send('Hola mundo, el servidor está funcionando correctamente desde la función');
+    })
     
     app.listen(port, ()=> {
-      console.log(`Servidor iniciado correctamente http://localhost:${port}`)
+      console.log(`Servidor iniciado correctamente http://localhost:${port}/index`)
     })
 
   } catch (error) {
