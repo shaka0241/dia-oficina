@@ -5,7 +5,8 @@
   "main": "scropt.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/shaka0241/dia-oficina#readme",
   "dependencies": {
+    "express": "^5.2.1",
     "node-fetch": "^3.3.2"
   }
 }
