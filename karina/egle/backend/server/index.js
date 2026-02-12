@@ -15,9 +15,17 @@ app.get('/cursos', (req, res) => {
     ]);
 });
 
+app.get('/saludo/:nombre', (req, res) => {
+
+    const nombreUsuario = req.params.nombre
+    res.send(`Hello ${nombreUsuario}, welcome`)
+})
+
 
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
 });
+
+
 
 
