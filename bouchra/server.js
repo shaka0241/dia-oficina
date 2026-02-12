@@ -1,31 +1,25 @@
-const express = require("express");
-const cors = require("cors");
 
-const app = express();
+const express = require('express')
+const app = express()
+const port = 3000
 
-app.use(cors());
-app.use(express.json());
 
-const users = [
-  { id: 1, name: "Ana" },
-  { id: 2, name: "Luis" }
-];
+app.get('/', (req, res) => {
+    res.send('<h1>Bienvenido a la academia Fullstack</h1>');
+})
+    
+app.get('/cursos', (req, res) => {
+    res.json([
+        {id: 1, nombre: 'Curso de JavaScript', duracion: '4 semanas'},
+        {id: 2, nombre: 'Curso de Python', duracion: '6 semanas'},
+        {id: 3, nombre: 'Curso de React', duracion: '5 semanas'}
+    ]);
+})
 
-// GET
-app.get("/users", (req, res) => {
-  res.json(users);
-});
+app.get('/saludo', (req, res) => {
+    res.send('<h1>Hola Jorge ,bienvenido a tu academia Fullstack</h1>');
+})
 
-// POST
-app.post("/users", (req, res) => {
-  const newUser = {
-    id: users.length + 1,
-    name: req.body.name
-  };
-  users.push(newUser);
-  res.status(201).json(newUser);
-});
-
-app.listen(3000, () => {
-  console.log("API corriendo en http://localhost:3000");
-});
+app.listen(port, ()=> {
+    console.log(`Servidor iniciado correctamente http://localhost:${port}`)
+})

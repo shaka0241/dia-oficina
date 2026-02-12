@@ -1,0 +1,119 @@
+/* Importar fonte desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f6fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Conteúdo principal centrado */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Seções (mantendo estrutura original) */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+
+    /* 🔹 MELHORIA VISUAL (sem alterar tamanho) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Títulos */
+h2 {
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+/* Linha decorativa simples nos títulos */
+h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #1e40af;
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #e0e7ff;
+}
+
+/* Imagem (TAMANHO ORIGINAL PRESERVADO) */
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    /* 🔹 MELHORIA VISUAL SUAVE */
+    transition: opacity 0.3s ease;
+}
+
+.profile-img:hover {
+    opacity: 0.9;
+}
+
+/* Footer (NÃO REMOVIDO) */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Links do footer */
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+    margin: 0 5px;
+
+    /* 🔹 MELHORIA */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
