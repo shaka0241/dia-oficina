@@ -3,9 +3,10 @@
 const express = require(`express`)
 const app = express()
 const port = 3000
-const userName = `Sonia`
+// const userName = `Sonia`
 
-app.get(`/`, (req, res) =>{
+app.get(`/:anotherName`, (req, res) =>{
+    const userName = req.params.anotherName
     res.send(`<h1>Hola ${userName}, bienvenid@ a la academia Full Stack</h1>`)
 })
 
