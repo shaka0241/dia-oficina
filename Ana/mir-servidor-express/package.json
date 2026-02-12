@@ -1,9 +1,8 @@
 {
-  "name": "ana",
+  "name": "mir-servidor-express",
   "version": "1.0.0",
   "description": "",
-  "main": "Practica0.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1",
-    "node-fetch": "^3.3.2"
+    "express": "^5.2.1"
   }
 }
