@@ -23,14 +23,14 @@ const addCart = (productName, quantity) => {
 
     let productleft = product.stock - quantity;
     
-    console.log(`De inventario del ${productName} queda la canrtidad de ${productleft}`);
+    console.log(`Del inventario del producto: ${productName} queda la cantidad de ${productleft}`);
 
     if(productleft === 0) {
-        return console.log(`Alerta el siguiente ${productName} se ha agotado`)
+        return console.log(`Alerta el siguiente producto: ${productName} se ha agotado`)
     }
 
 
 
 }
 
-addCart("Mouse", 5)
+addCart("Mouse", 50)
