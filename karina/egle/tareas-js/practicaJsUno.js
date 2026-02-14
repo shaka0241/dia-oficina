@@ -21,6 +21,16 @@ const addCart = (productName, quantity) => {
    
     console.log(`El total de su compra es la sig: ${quantity}  del producto: ${productName}`)
 
+    let productleft = product.stock - quantity;
+    
+    console.log(`De inventario del ${productName} queda la canrtidad de ${productleft}`);
+
+    if(productleft === 0) {
+        return console.log(`Alerta el siguiente ${productName} se ha agotado`)
+    }
+
+
+
 }
 
 addCart("Mouse", 5)
