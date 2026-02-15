@@ -27,3 +27,22 @@ addAvengersTeam("Spider-man");
 addAvengersTeam("Batman");
 
 console.log(newAvengerTeam);
+
+//Función subir nivel
+const levelUp = (heroeName) => {
+//Buscamos el heroe 
+const foundHeroe = heroes.find(h => h.nombre.toLowerCase() === heroeName.toLowerCase());
+ // validamos el heroe y subimos nivel
+if(foundHeroe) {
+    foundHeroe.nivel += 1;
+    console.log(`your ${foundHeroe.nombre} ha subido de nivel: ${foundHeroe.nivel}`)
+} else {
+    console.log(`your hero: ${heroeName} no encotnrado`)
+    
+}
+
+}
+
+levelUp("Iron Man");
+levelUp("Batman");
+console.log(heroes);
