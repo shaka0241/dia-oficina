@@ -37,7 +37,7 @@ if(foundHeroe) {
     foundHeroe.nivel += 1;
     console.log(`your ${foundHeroe.nombre} ha subido de nivel: ${foundHeroe.nivel}`)
 } else {
-    console.log(`your hero: ${heroeName} no encotnrado`)
+    console.log(`your hero: ${heroeName} no encontrado`)
     
 }
 
